@@ -1,0 +1,36 @@
+<mjml>
+    <mj-head>
+    <mj-style> 
+        .body {
+            background-color="#fbfbfb"
+        }
+        .text {
+            align:   center;
+            color:   black;
+            font-family: Arial; sans-serif; 
+            font-size: 13px; 
+            line-height: 22px; 
+            padding: 10px 25px;
+        }
+        a {
+            text-decoration: none;
+             color: #445566
+        }
+    </mj-style>
+  </mj-head>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
+            <mj-include path="./partials/header.mjml"/>
+            <mj-include path="./partials/welcome_text.mjml" />
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero" padding="0">
+                    <mj-text mj-class="title-hero" align="center">${{ lang.import_complete }}$</mj-text>
+                    <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
+                    <mj-text padding-bottom="15px" align="center">${{ lang.the_file_filename_has_been_successfully_imported_to_your_shop }}$</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-include path="./partials/footer.mjml" />
+        </mj-container>
+    </mj-body>
+</mjml>

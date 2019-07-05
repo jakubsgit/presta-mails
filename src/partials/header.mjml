@@ -1,0 +1,12 @@
+        <mj-wrapper full-width="full-width" background-color="white" padding="0">
+            <mj-section background-color="white" padding="0">
+                <mj-column padding="0">
+                <mj-image width="300px" src="https://carry.pl/img/theme/mails/carry-logo.png"></mj-image>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
+            <mj-section mj-class="section" background-color="white" padding="0">
+                <mj-column>
+                    <mj-divider border-color="#445566" padding-bottom="0"></mj-divider>
+                </mj-column>
+            </mj-section>

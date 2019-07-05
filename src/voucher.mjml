@@ -1,0 +1,40 @@
+<mjml>
+    <mj-head>
+    <mj-style> 
+        .body {
+            background-color="#fbfbfb"
+        }
+        .text {
+            align:   center;
+            color:   black;
+            font-family: Arial; sans-serif; 
+            font-size: 13px; 
+            line-height: 22px; 
+            padding: 10px 25px;
+        }
+        a {
+            text-decoration: none;
+            color: #445566
+        }
+    </mj-style>
+  </mj-head>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
+            <mj-include path="./partials/header.mjml"/>
+            <mj-include path="./partials/welcome_text.mjml" />
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero">
+                    <mj-text mj-class="title-hero">${{ lang.order_order_name }}$ - ${{ lang.voucher_created }}$</mj-text>
+                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-text>${{ lang.a_voucher_has_been_created_in_your_name_as_a_result_of_your_order_with_the_reference_order_name }}$</mj-text>
+                    <mj-spacer height="20px" />
+                    <mj-text>${{ lang.voucher_code_voucher_num_in_the_amount_of_voucher_amount }}$</mj-text>
+                    <mj-spacer height="20px" />
+                    <mj-text padding-bottom="15px">${{ lang.simply_copypaste_this_code_during_the_payment_process_for_your_next_order }}$</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-include path="./src/partials/footer.mjml" />
+        </mj-container>
+    </mj-body>
+</mjml>

@@ -1,0 +1,103 @@
+<mj-section mj-class="section" background-color="#fbfbfb">
+    <mj-column>
+        <mj-table> 
+            <tr>
+                <th style="border:2px solid #445566;padding: 10px;">${{ lang.reference }}$</th>
+                <th style="border:2px solid #445566;padding: 10px;">${{ lang.product }}$</th>
+                <th style="border:2px solid #445566;padding: 10px;">${{ lang.unit_price }}$</th>
+                <th style="border:2px solid #445566;padding: 10px;">${{ lang.quantity }}$</th>
+                <th style="border:2px solid #445566;padding: 10px;">${{ lang.total_price }}$</th>
+            </tr>
+            <tr>
+                <td colspan="5" style="border:1px solid #D6D4D4; border-bottom: none; padding:7px 7px 0 7px;" align="center">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
+                        {products}
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="border:1px solid #D6D4D4; border-top: none;padding:0 7px;" align="center">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
+                        {discounts}
+                    </table>
+                </td>
+            </tr>
+            <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                    <strong>${{ lang.products }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                    {total_products}
+                </td>
+            </tr>
+            <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                    <strong>${{ lang.discounts }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                    {total_discounts}
+                </td>
+            </tr>
+            <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                    <strong>${{ lang.giftwrapping }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                    {total_wrapping}
+                </td>
+            </tr>
+            <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                    <strong>${{ lang.shipping }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                    {total_shipping}
+                </td>
+            </tr>
+            <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                    <strong>${{ lang.total_tax_paid }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                    {total_tax_paid}
+                </td>
+            </tr>
+            <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                    <strong>${{ lang.total_paid }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                    <strong>{total_paid}</strong>
+                </td>
+            </tr>
+        </mj-table>
+    </mj-column>
+</mj-section>
+<mj-section mj-class="section"background-color="white">
+    <mj-column mj-class="background-hero">
+        <mj-text mj-class="title-hero">${{ lang.Koszt_wysyłki }}$</mj-text>
+        <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
+        <mj-text padding-bottom="15px"><strong>${{ lang.carrier }}$</strong> {carrier}</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section mj-class="section"background-color="white">
+    <mj-column mj-class="background-hero" width="48%">
+        <mj-text mj-class="title-hero">${{ lang.delivery_address }}$</mj-text>
+        <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
+        <mj-text padding-bottom="15px">{delivery_block_html}</mj-text>
+    </mj-column>
+    <mj-column width="4%">
+        <mj-spacer height="20px" />
+    </mj-column>
+    <mj-column mj-class="background-hero" width="48%">
+        <mj-text mj-class="title-hero">${{ lang.billing_address }}$</mj-text>
+        <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
+        <mj-text padding-bottom="15px">{invoice_block_html}</mj-text>
+    </mj-column>
+</mj-section>
+<mj-section background-color="#fbfbfb" padding="0">
+    <mj-column>
+        <mj-button padding="5px 2px" mj-class="open-sans-button" border-radius="10px" href="{shop_url}my-account.php" width="70%"><span style="letter-spacing: 2px;">Sprawdź swoje zamówienie</span></mj-button>
+    </mj-column>
+</mj-section>

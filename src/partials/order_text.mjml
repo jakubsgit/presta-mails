@@ -1,0 +1,6 @@
+
+<mj-section mj-class="section"  background-color="#fbfbfb" padding="0">
+    <mj-column mj-class="background-hero">
+        <mj-text mj-class="title-hero" font-size="25px" align="center">Dziękujemy za złożenie zamówienia o numerze {order_name}</mj-text>
+    </mj-column>
+</mj-section>

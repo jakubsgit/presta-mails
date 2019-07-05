@@ -1,0 +1,53 @@
+<mjml>
+    <mj-head>
+    <mj-style> 
+        .body {
+            background-color="#fbfbfb"
+        }
+        .text {
+            align:   center;
+            color:   black;
+            font-family: Arial; sans-serif; 
+            font-size: 13px; 
+            line-height: 22px; 
+            padding: 10px 25px;
+        }
+        a {
+            text-decoration: none;
+             color: #445566
+        }
+    </mj-style>
+  </mj-head>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
+            <mj-include path="./partials/header.mjml"/>
+            <!--Header with message-->
+            <mj-include path="./partials/welcome_text.mjml" />
+
+
+            <mj-section mj-class="section">
+                <mj-column width="100%">
+
+                    <mj-include path="./src/partials/logo.mjml" />
+
+                    <mj-text align="center" mj-class="title">${{ lang.your_message_to_shop_name_customer_service }}$</mj-text>
+                    <mj-text align="center" mj-class="subtitle">${{ lang.your_message_has_been_sent_successfully }}$</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero">
+                <mj-divider border-color="#445566"></mj-divider>
+                    <mj-text align="center" padding="15px 15px 2px"font-weight="bold">${{ lang.message }}$</mj-text>
+                    <mj-text align="center">{message}</mj-text>
+                    <mj-spacer height="20px" />
+                    <mj-text align="center"><b>${{ lang.order_id }}$</b> {order_name}</mj-text>
+                    <mj-text align="center"><b>${{ lang.product }}$</b> {product_name}</mj-text>
+                    <mj-text align="center" padding-bottom="15px"><b>${{ lang.attached_file }}$</b> {attached_file}</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-include path="./partials/footer.mjml" />
+        </mj-container>
+    </mj-body>
+</mjml>

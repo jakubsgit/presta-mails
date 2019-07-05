@@ -1,0 +1,43 @@
+<mjml>
+    <mj-head>
+    <mj-style> 
+        .body {
+            background-color="#fbfbfb"
+        }
+        .text {
+            align:   center;
+            color:   black;
+            font-family: Arial; sans-serif; 
+            font-size: 13px; 
+            line-height: 22px; 
+            padding: 10px 25px;
+        }
+        a {
+            text-decoration: none;
+             color: #445566
+        }
+    </mj-style>
+  </mj-head>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
+            <mj-include path="./partials/header.mjml"/>
+            <mj-include path="./partials/welcome_text.mjml" />
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero">
+                    <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
+                </mj-column>
+            </mj-section>
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero">
+                    <mj-text mj-class="title-hero" align="center">${{ lang.customer_service__forwarded_discussion }}$</mj-text>
+                    <mj-text>${{ lang.employee_wanted_to_forward_this_discussion_to_you }}$</mj-text>
+                    <mj-text font-weight="bold" align="center">${{ lang.discussion_history }}$</b></mj-text>
+                    <mj-text padding="2px 15px 20px" align="center">{messages}</mj-text>
+                    <mj-text padding-bottom="15px" align="center">${{ lang.employee_added_comment }}$</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-include path="./partials/footer.mjml" />
+        </mj-container>
+    </mj-body>
+</mjml>

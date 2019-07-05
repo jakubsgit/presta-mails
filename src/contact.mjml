@@ -1,0 +1,45 @@
+<mjml>
+    <mj-head>
+    <mj-style> 
+        .body {
+            background-color="#fbfbfb"
+        }
+        .text {
+            align:   center;
+            color:   black;
+            font-family: Arial; sans-serif; 
+            font-size: 13px; 
+            line-height: 22px; 
+            padding: 10px 25px;
+        }
+        a {
+            text-decoration: none;
+             color: #445566
+        }
+    </mj-style>
+  </mj-head>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
+            <mj-include path="./partials/header.mjml"/>
+            <mj-include path="./partials/welcome_text.mjml" />
+            <mj-section mj-class="section">
+                <mj-column width="80%" border="1px solid #445566" border-radius="10px">
+                    <mj-text mj-class="title" align="center" align="center">${{ lang.message_from_a_shop_name_customer }}$</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero">
+                    <mj-text padding="15px 15px 2px"font-weight="bold" align="center">${{ lang.message }}$</mj-text>
+                    <mj-text align="center">{message}</mj-text>
+                    <mj-spacer height="20px" />
+                    <mj-text align="center"><b>${{ lang.order_id }}$</b> {order_name}</mj-text>
+                    <mj-text align="center"><b>${{ lang.product }}$</b> {product_name}</mj-text>
+                    <mj-text padding-bottom="15px" align="center"><b>${{ lang.attached_file }}$</b> {attached_file}</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-include path="./partials/footer.mjml" />
+        </mj-container>
+    </mj-body>
+</mjml>

@@ -1,0 +1,36 @@
+<mjml>
+    <mj-head>
+    <mj-style> 
+        .body {
+            background-color="#fbfbfb"
+        }
+        .text {
+            text-align:   center;
+            color:   black;
+            font-family: Arial; sans-serif; 
+            font-size: 13px; 
+            line-height: 22px; 
+            padding: 10px 25px;
+        }
+        a {
+            text-decoration: none;
+             color: #445566
+        }
+    </mj-style>
+  </mj-head>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
+            <mj-include path="./partials/header.mjml" />
+            <mj-include path="./partials/welcome_text.mjml" />
+            <mj-section mj-class="section">
+                <mj-column mj-class="background-hero">
+                    <mj-text mj-class="title" align="center">${{ lang.a_new_order_has_been_generated_on_your_behalf }}$</mj-text>
+                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-text padding-bottom="15px" align="center">${{ lang.please_go_on_order_link_to_finalize_the_payment }}$</mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-include path="./partials/footer.mjml" />
+        </mj-container>
+    </mj-body>
+</mjml>
