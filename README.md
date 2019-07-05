@@ -6,19 +6,18 @@ Szablony maili dla sklepu internetowego Carry.
 
 ### Priorytety
 
-- [&check;] order_conf *
-- [&check;] order_canceled *
-- [&check;] order_changed
-- [&check;] payment *
-- [&check;] preparation *
-- [&check;] shipped *
-- [&check;] account
+- [ ] order_conf *
+- [ ] order_canceled *
+- [ ] order_changed
+- [ ] payment *
+- [ ] preparation *
+- [ ] shipped *
+- [ ] account
 - [ ] password
-- [&check;] password_query *
+- [ ] password_query *
 
 ### Dodatkowe
 
-- [&check;] account *
 - [ ] cheque *
 - [ ] contact *
 - [ ] contact_form *
@@ -26,6 +25,22 @@ Szablony maili dla sklepu internetowego Carry.
 - [ ] refund *
 - [ ] reply_msg *
 - [ ] textmail *
+- [ ] backoffice_order *
+- [ ] bankwire *
+- [ ] credit_slip *
+- [ ] download_product *
+- [ ] forward_msg *
+- [ ] import *
+- [ ] in_transit *
+- [ ] log_alert *
+- [ ] newsletter *
+- [ ] order_customer_comment *
+- [ ] order_merchant_comment *
+- [ ] order_return_state *
+- [ ] payment_error *
+- [ ] test *
+- [ ] voucher_new *
+- [ ] voucher *
 
 
 ## Usage
