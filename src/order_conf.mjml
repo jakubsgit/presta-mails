@@ -24,8 +24,8 @@
             <!--Header with message-->
             <mj-include path="./partials/welcome_text.mjml" />
             <mj-include path="./partials/order_text.mjml" />
-            <mj-section mj-class="section"  background-color="#fbfbfb"  padding="0">
-                <mj-column mj-class="background-hero">
+            <mj-section mj-class="section" background-color="#fbfbfb"  padding="0">
+                <mj-column mj-class="background-hero" background-color="#fbfbfb">
                     <mj-divider border-color="#445566"></mj-divider>
                     <mj-text><strong>${{ lang.order }}$</strong> {order_name} ${{ lang.placed_on }}$ {date}</mj-text>
                     <mj-text padding-bottom="15px"><strong>${{ lang.payment }}$</strong> {payment}</mj-text>
