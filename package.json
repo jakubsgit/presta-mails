@@ -14,7 +14,7 @@
     "gulp-download-stream": "^0.0.19",
     "gulp-ext-replace": "^0.3.0",
     "gulp-html-i18n": "^0.14.0",
-    "gulp-mjml": "^2.0.0",
+    "gulp-mjml": "git+https://git@github.com/mjmlio/gulp-mjml.git#1cf5074c32621a2d6bc7",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^1.0.0",
     "gulp-replace-task": "^0.11.0",
@@ -23,5 +23,14 @@
   },
   "dependencies": {
     "mjml": "^4.4.0-beta.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakubsgit/presta-mails.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jakubsgit/presta-mails/issues"
+  },
+  "homepage": "https://github.com/jakubsgit/presta-mails#readme"
 }
