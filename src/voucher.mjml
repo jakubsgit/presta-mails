@@ -25,7 +25,7 @@
             <mj-section mj-class="section">
                 <mj-column mj-class="background-hero">
                     <mj-text mj-class="title-hero">${{ lang.order_order_name }}$ - ${{ lang.voucher_created }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
                     <mj-text>${{ lang.a_voucher_has_been_created_in_your_name_as_a_result_of_your_order_with_the_reference_order_name }}$</mj-text>
                     <mj-spacer height="20px" />
                     <mj-text>${{ lang.voucher_code_voucher_num_in_the_amount_of_voucher_amount }}$</mj-text>
@@ -34,7 +34,7 @@
                 </mj-column>
             </mj-section>
 
-            <mj-include path="./src/partials/footer.mjml" />
+            <mj-include path="./partials/footer.mjml" />
         </mj-container>
     </mj-body>
 </mjml>

@@ -17,7 +17,7 @@
             <mj-section mj-class="section">
                 <mj-column mj-class="background-hero">
                     <mj-text mj-class="title-hero">${{ lang.this_is_to_inform_you_about_the_creation_of_a_voucher }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
                     <mj-text>${{ lang.here_is_the_code_of_your_voucher }}$ <strong>{voucher_num}<strong></mj-text>
                     <mj-spacer height="20px" />
                     <mj-text padding-bottom="15px">${{ lang.simply_copypaste_this_code_during_the_payment_process_for_your_next_order }}$</mj-text>

@@ -25,7 +25,7 @@
             <mj-section mj-class="section">
                 <mj-column mj-class="background-hero">
                     <mj-text mj-class="title-hero">${{ lang.message_from_a_customer }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
                     <mj-text>${{ lang.you_have_received_a_new_message_regarding_order_with_the_reference }}$ {order_name}</mj-text>
                     <mj-spacer height="20px" />
                     <mj-text><strong>${{ lang.customer }}$</strong> {firstname} {lastname} ({email})</mj-text>
