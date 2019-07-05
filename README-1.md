@@ -28,6 +28,19 @@ Szablony maili dla sklepu internetowego Carry.
 - [ ] backoffice_order *
 - [ ] bankwire *
 - [ ] credit_slip *
+- [ ] download_product *
+- [ ] forward_msg *
+- [ ] import *
+- [ ] in_transit *
+- [ ] log_alert *
+- [ ] newsletter *
+- [ ] order_customer_comment *
+- [ ] order_merchant_comment *
+- [ ] order_return_state *
+- [ ] payment_error *
+- [ ] test *
+- [ ] voucher_new *
+- [ ] voucher *
 
 
 ## Usage
