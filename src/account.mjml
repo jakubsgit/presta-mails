@@ -2,7 +2,9 @@
     <mj-head>
     <mj-style> 
         .body {
-            background-color: white;
+            background-color="#fbfbfb";
+            max-width: 600px;
+            
         }
         .text {
             align:   center;
@@ -18,19 +20,21 @@
         }
     </mj-style>
   </mj-head>
-      <mj-body>
+    <mj-body>
+        <mj-container mj-class="body" background-color="#fbfbfb">
             <mj-include path="./partials/header.mjml"/>
-            <mj-section mj-class="section">
-                <mj-column width="100%">
-                    <mj-text mj-class="title">${{ lang.hi_firstname_lastname }}$</mj-text>
-                    <mj-text mj-class="subtitle">${{ lang.thank_you_for_creating_a_customer_account_at_shop_name }}$</mj-text>
+            <!--Header with message-->
+            <mj-include path="./partials/welcome_text.mjml" />
+            <mj-section>
+                <mj-column>
+                    <mj-text align="center" font-size="30px">${{ lang.thank_you_for_creating_a_customer_account_at_shop_name }}$</mj-text>
                 </mj-column>
             </mj-section>
 
             <mj-section mj-class="section">
                 <mj-column mj-class="background-hero">
                     <mj-text mj-class="title-hero">${{ lang.your_shop_name_login_details }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-divider border-color="#445566" padding-bottom="0"></mj-divider>
                     <mj-text>${{ lang.here_are_your_login_details }}$</mj-text>
                     <mj-text padding-bottom="15px" font-weight="bold">${{ lang.email_address }}$ {email}</mj-text>
                 </mj-column>
@@ -39,7 +43,7 @@
             <mj-section mj-class="section">
                 <mj-column mj-class="background-hero">
                     <mj-text mj-class="title-hero">${{ lang.important_security_tips }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
+                    <mj-divider border-color="#445566" padding-bottom="0"></mj-divider>
                     <mj-text padding="2px 15px 2px 5px" line-height="20px">
                         <ol>
                             <li>${{ lang.always_keep_your_account_details_safe }}$</li>

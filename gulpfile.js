@@ -120,7 +120,7 @@ gulp.task('watch', function () {
 
 // Download translations
 gulp.task('langs:dl', ['langs:clean'], function () {
-    ['en', 'fr', 'es'].forEach(function(lang) {
+    ['en', 'fr', 'es', 'pl'].forEach(function(lang) {
         download('http://api.addons.prestashop.com/index.php?version=1&method=translations&type=emails&iso_lang='+lang)
         .pipe(buffer())
         .pipe(rename("lang.json"))

@@ -7,13 +7,13 @@
 </mj-section>
 <mj-section background-color="#fbfbfb" padding="0">
     <mj-column width="33%">
-        <mj-image padding="6px 6px" src="https://picsum.photos/250/250/"></mj-image>
+        <mj-image padding="6px 6px" src="https://picsum.photos/150/150/"></mj-image>
     </mj-column>
     <mj-column width="33%">
-        <mj-image padding="6px 6px" src="https://picsum.photos/250/250/"></mj-image>
+        <mj-image padding="6px 6px" src="https://picsum.photos/150/150/"></mj-image>
     </mj-column>
     <mj-column width="33%">
-        <mj-image padding="6px 6px" src="https://picsum.photos/250/250/"></mj-image>
+        <mj-image padding="6px 6px" src="https://picsum.photos/150/150/"></mj-image>
     </mj-column>
 </mj-section>
 
@@ -23,7 +23,7 @@
         <mj-image alt="carry facebook" href="www.facebook.com/carryworld" width="40px" src="https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/share-facebook.gif"></mj-image>
     </mj-column>
     <mj-column width="36%">
-        <mj-text font-size="14px" font-weight="bold" text-transform="uppercase" align="center">
+        <mj-text font-size="14px" font-weight="bold" text-transform="uppercase" align="center" text-decoration="none">
             <a href="www.facebook.com/carryworld" target="_blank" text-decoration="none">facebook.com<br/>carryworld</a>
         </mj-text>
     </mj-column>
@@ -36,14 +36,9 @@
         <mj-image alt="ugg instagram" href="http://www.ugg.com/" width="40px" src="https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/share-instagram.gif"></mj-image>
     </mj-column>
 </mj-section>
-<mj-section padding="0" background-color="#fbfbfb">
-    <mj-column>
-        <mj-image src="http://nimus.de/share/tpl-card/bottom.png" alt="bottom border" align="center" border="none" padding="0px"></mj-image>
-    </mj-column>
-</mj-section>
 <!--Footer-footer-->
 <mj-wrapper full-width="full-width" background-color="#fbfbfb">
-    <mj-section background-color="#fbfbfb">
+    <mj-section background-color="white">
         <mj-column width="100%" padding="0">
             <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
             Możesz sprawdzić swoje zamówienie i wydrukować potwierdzenie z <a href="{history_url}" style="color:#337ff1">Historia zamówień</a>, lub wejść na swoje konto<a href="{my_account_url}" style="color:#337ff1"> Moje konto</a> na naszym sklepie</span>

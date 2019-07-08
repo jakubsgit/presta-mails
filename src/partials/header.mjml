@@ -6,7 +6,7 @@
             </mj-section>
         </mj-wrapper>
             <mj-section mj-class="section" background-color="white" padding="0">
-                <mj-column>
+                <mj-column background-color="white">
                     <mj-divider border-color="#445566" padding-bottom="0"></mj-divider>
                 </mj-column>
             </mj-section>

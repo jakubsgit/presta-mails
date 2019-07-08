@@ -2,11 +2,11 @@
     <mj-column>
         <mj-table> 
             <tr>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.reference }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.product }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.unit_price }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.quantity }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.total_price }}$</th>
+                <th style="border:2px solid #445566;padding: 10px;">Numer produktu</th>
+                <th style="border:2px solid #445566;padding: 10px;">Produkt</th>
+                <th style="border:2px solid #445566;padding: 10px;">Cena jednostkowa</th>
+                <th style="border:2px solid #445566;padding: 10px;">Ilość</th>
+                <th style="border:2px solid #445566;padding: 10px;">Cena całkowita</th>
             </tr>
             <tr>
                 <td colspan="5" style="border:1px solid #D6D4D4; border-bottom: none; padding:7px 7px 0 7px;" align="center">
@@ -32,7 +32,7 @@
             </tr>
             <tr align="right">
                 <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                    <strong>${{ lang.discounts }}$</strong>
+                     <strong>${{ lang.discounts }}$</strong>
                 </td>
                 <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
                     {total_discounts}
@@ -56,10 +56,10 @@
             </tr>
             <tr align="right">
                 <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                    <strong>${{ lang.total_tax_paid }}$</strong>
+                                        <strong>${{ lang.total_tax_paid }}$</strong>
                 </td>
                 <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                    {total_tax_paid}
+                                    {total_tax_paid}
                 </td>
             </tr>
             <tr align="right">
@@ -73,15 +73,15 @@
         </mj-table>
     </mj-column>
 </mj-section>
-<mj-section mj-class="section"background-color="white">
+<mj-section mj-class="section" background-color="#fbfbfb">
     <mj-column mj-class="background-hero">
-        <mj-text mj-class="title-hero">${{ lang.Koszt_wysyłki }}$</mj-text>
+        <mj-text mj-class="title-hero">${{ lang.shipping }}$</mj-text>
         <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
         <mj-text padding-bottom="15px"><strong>${{ lang.carrier }}$</strong> {carrier}</mj-text>
     </mj-column>
 </mj-section>
 
-<mj-section mj-class="section"background-color="white">
+<mj-section mj-class="section" background-color="#fbfbfb">
     <mj-column mj-class="background-hero" width="48%">
         <mj-text mj-class="title-hero">${{ lang.delivery_address }}$</mj-text>
         <mj-divider mj-class="title-divider-hero" border-color="#445566"></mj-divider>
