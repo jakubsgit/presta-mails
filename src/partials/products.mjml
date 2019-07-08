@@ -10,7 +10,7 @@
             </tr>
             <tr>
                 <td colspan="5" style="border:1px solid #D6D4D4; border-bottom: none; padding:7px 7px 0 7px;" align="center">
-                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list" background-color="#fbfbfb">
                         {products}
                     </table>
                 </td>

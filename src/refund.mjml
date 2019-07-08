@@ -7,7 +7,6 @@
         .text {
             align:   center;
             color:   black;
-            font-family: Arial; sans-serif; 
             font-size: 15px; 
             line-height: 22px; 
             padding: 10px 25px;
@@ -29,11 +28,6 @@
                     <mj-text padding-bottom="15px" align="center">${{ lang.we_have_processed_your_shop_name_refund_for_order_with_the_reference_order_name }}$</mj-text>
                 </mj-column>
             </mj-section>
-
-            <mj-include path="./src/partials/account.mjml" />
-
-            <mj-include path="./src/partials/guest_to_customer.mjml" />
-
             <mj-include path="./partials/footer.mjml" />
         </mj-container>
     </mj-body>
