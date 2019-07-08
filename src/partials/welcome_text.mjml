@@ -1,5 +1,5 @@
 <mj-section mj-class="section"  background-color="#fbfbfb" padding-bottom="0">
     <mj-column mj-class="background-hero">
-        <mj-text mj-class="title-hero"  font-size="25px" align="center">Witaj <span style="text-transform: lowercase">{firstname}</span></mj-text>
+        <mj-text mj-class="title-hero"  font-size="25px" align="center">Witaj <span>{firstname} {lastname}</span></mj-text>
     </mj-column>
 </mj-section>
