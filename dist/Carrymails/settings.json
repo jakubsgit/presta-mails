@@ -1,0 +1,40 @@
+{
+  "product_key": "",
+  "name": "Carrymails",
+  "version": "1.0",
+  "author": "PrestaShop",
+  "inputs": [
+    {
+      "type": "text",
+      "name": "var_name",
+      "default": "foo",
+      "required": false,
+      "label": {
+        "en": "English label",
+        "fr": "French label"
+      },
+      "desc": {
+        "en": "English description",
+        "fr": "French description"
+      }
+    },
+    {
+      "type": "text",
+      "name": "var_name_lang",
+      "default": {
+        "en": "My custom text",
+        "fr": "Mon texte personnalisé"
+      },
+      "required": false,
+      "lang": true,
+      "label": {
+        "en": "English label",
+        "fr": "French label"
+      },
+      "desc": {
+        "en": "English description",
+        "fr": "French description"
+      }
+    }
+  ]
+}
