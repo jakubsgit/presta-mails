@@ -1,6 +1,5 @@
 {
   "{{$main_color}}": "#555454",
-  "{{$second_color}}": "#555454",
   "{{$mails_img_url}}": "../../../src/img/",
   "{{$facebook_link}}": "https://www.facebook.com/prestashop",
   "{{$twitter_link}}": "https://www.twitter.com/prestashop",
