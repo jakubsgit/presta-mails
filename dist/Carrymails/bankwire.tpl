@@ -53,7 +53,6 @@
         .text {
             align:   center;
             color:   black;
-            font-family: Arial; sans-serif; 
             font-size: 13px; 
             line-height: 22px; 
             padding: 10px 25px;
@@ -64,7 +63,9 @@
         }</style>
         
       <style>/**** Global ****/
-
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body {max-width: 600px; margin: auto; font-family: 'Nunito', sans-serif;};
+a {text-decoration: none; color: #445566}
 div a, div span, div strong, td a{color: {{$second_color}};}
 
 .mj-inline-links a, .mj-inline-links a span{color: #ffffff !important;}

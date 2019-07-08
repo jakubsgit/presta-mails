@@ -74,7 +74,6 @@
         .text {
             align:   center;
             color:   black;
-            font-family: Arial; sans-serif; 
             font-size: 13px; 
             line-height: 22px; 
             padding: 10px 25px;
@@ -85,7 +84,9 @@
         }</style>
         
       <style>/**** Global ****/
-
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body {max-width: 600px; margin: auto; font-family: 'Nunito', sans-serif;};
+a {text-decoration: none; color: #445566}
 div a, div span, div strong, td a{color: {{$second_color}};}
 
 .mj-inline-links a, .mj-inline-links a span{color: #ffffff !important;}
@@ -351,7 +352,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
       >
         
       <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%"
       >
         
             <tr>
@@ -447,7 +448,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
                 
       <div
          style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:25px;line-height:1;text-align:center;color:#000000;"
-      >Witaj <span style="text-transform: lowercase">{firstname}</span></div>
+      >Witaj <span>{firstname} {lastname}</span></div>
     
               </td>
             </tr>

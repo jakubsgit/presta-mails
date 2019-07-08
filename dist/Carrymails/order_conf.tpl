@@ -79,7 +79,6 @@
         .text {
             align:   center;
             color:   black;
-            font-family: Arial; sans-serif; 
             font-size: 13px; 
             line-height: 22px; 
             padding: 10px 25px;
@@ -90,7 +89,9 @@
         }</style>
         
       <style>/**** Global ****/
-
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body {max-width: 600px; margin: auto; font-family: 'Nunito', sans-serif;};
+a {text-decoration: none; color: #445566}
 div a, div span, div strong, td a{color: {{$second_color}};}
 
 .mj-inline-links a, .mj-inline-links a span{color: #ffffff !important;}
@@ -356,7 +357,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
       >
         
       <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:white;vertical-align:top;" width="100%"
       >
         
             <tr>
@@ -456,7 +457,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
                 
       <div
          style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:25px;line-height:1;text-align:center;color:#000000;"
-      >Witaj <span style="text-transform: lowercase">{firstname}</span></div>
+      >Witaj <span>{firstname} {lastname}</span></div>
     
               </td>
             </tr>
@@ -528,7 +529,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
                 
       <div
          style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:25px;line-height:1;text-align:center;color:#000000;"
-      >Dziękujemy za złożenie zamówienia o numerze {order_name}</div>
+      >Dziękujemy za złożenie zamówienia w sklepie <strong>{shop_name}<strong></div>
     
               </td>
             </tr>
@@ -716,15 +717,15 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
          cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;"
       >
         <tr>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.reference }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.product }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.unit_price }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.quantity }}$</th>
-                <th style="border:2px solid #445566;padding: 10px;">${{ lang.total_price }}$</th>
+                <th style="border:2px solid #445566;padding: 10px;">Numer produktu</th>
+                <th style="border:2px solid #445566;padding: 10px;">Produkt</th>
+                <th style="border:2px solid #445566;padding: 10px;">Cena jednostkowa</th>
+                <th style="border:2px solid #445566;padding: 10px;">Ilość</th>
+                <th style="border:2px solid #445566;padding: 10px;">Cena całkowita</th>
             </tr>
             <tr>
                 <td colspan="5" style="border:1px solid #D6D4D4; border-bottom: none; padding:7px 7px 0 7px;" align="center">
-                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list" background-color="#fbfbfb">
                         {products}
                     </table>
                 </td>
@@ -746,7 +747,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
             </tr>
             <tr align="right">
                 <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                    <strong>${{ lang.discounts }}$</strong>
+                     <strong>${{ lang.discounts }}$</strong>
                 </td>
                 <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
                     {total_discounts}
@@ -770,10 +771,10 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
             </tr>
             <tr align="right">
                 <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                    <strong>${{ lang.total_tax_paid }}$</strong>
+                                        <strong>${{ lang.total_tax_paid }}$</strong>
                 </td>
                 <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                    {total_tax_paid}
+                                    {total_tax_paid}
                 </td>
             </tr>
             <tr align="right">
@@ -821,10 +822,10 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
       <![endif]-->
     
       
-      <div  style="background:white;background-color:white;Margin:0px auto;max-width:600px;">
+      <div  style="background:#fbfbfb;background-color:#fbfbfb;Margin:0px auto;max-width:600px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:white;background-color:white;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fbfbfb;background-color:#fbfbfb;width:100%;"
         >
           <tbody>
             <tr>
@@ -856,7 +857,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
                 
       <div
          style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"
-      >${{ lang.Koszt_wysyłki }}$</div>
+      >${{ lang.shipping }}$</div>
     
               </td>
             </tr>
@@ -931,10 +932,10 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
       <![endif]-->
     
       
-      <div  style="background:white;background-color:white;Margin:0px auto;max-width:600px;">
+      <div  style="background:#fbfbfb;background-color:#fbfbfb;Margin:0px auto;max-width:600px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:white;background-color:white;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fbfbfb;background-color:#fbfbfb;width:100%;"
         >
           <tbody>
             <tr>
@@ -1202,7 +1203,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
             <a
                href="{shop_url}my-account.php" style="display:inline-block;background:#414141;color:#ffffff;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:10px;" target="_blank"
             >
-              <span style="letter-spacing: 2px;">Sprawdź swoje zamówienie</span>
+              <span style="letter-spacing: 2px;" color="white">Sprawdź swoje zamówienie</span>
             </a>
           </td>
         </tr>
@@ -1368,7 +1369,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
             <td  style="width:186px;">
               
       <img
-         height="auto" src="https://picsum.photos/250/250/" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="186"
+         height="auto" src="https://picsum.photos/150/150/" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="186"
       />
     
             </td>
@@ -1412,7 +1413,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
             <td  style="width:186px;">
               
       <img
-         height="auto" src="https://picsum.photos/250/250/" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="186"
+         height="auto" src="https://picsum.photos/150/150/" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="186"
       />
     
             </td>
@@ -1456,7 +1457,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
             <td  style="width:186px;">
               
       <img
-         height="auto" src="https://picsum.photos/250/250/" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="186"
+         height="auto" src="https://picsum.photos/150/150/" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="186"
       />
     
             </td>
@@ -1587,7 +1588,7 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
               >
                 
       <div
-         style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:1;text-align:center;text-transform:uppercase;color:#000000;"
+         style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:14px;font-weight:bold;line-height:1;text-align:center;text-decoration:none;text-transform:uppercase;color:#000000;"
       ><a href="www.facebook.com/carryworld" target="_blank" text-decoration="none">facebook.com<br/>carryworld</a></div>
     
               </td>
@@ -1698,90 +1699,6 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
           </td>
         </tr>
       </table>
-      
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
-      >
-        <tr>
-          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]-->
-    
-      
-      <div  style="background:#fbfbfb;background-color:#fbfbfb;Margin:0px auto;max-width:600px;">
-        
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fbfbfb;background-color:#fbfbfb;width:100%;"
-        >
-          <tbody>
-            <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:0px;text-align:center;"
-              >
-                <!--[if mso | IE]>
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                
-        <tr>
-      
-            <td
-               class="" style="vertical-align:top;width:600px;"
-            >
-          <![endif]-->
-            
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
-        
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
-        
-            <tr>
-              <td
-                 align="center" style="font-size:0px;padding:0px;word-break:break-word;"
-              >
-                
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
-        <tbody>
-          <tr>
-            <td  style="width:600px;">
-              
-      <img
-         alt="bottom border" height="auto" src="http://nimus.de/share/tpl-card/bottom.png" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600"
-      />
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-              </td>
-            </tr>
-          
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]>
-            </td>
-          
-        </tr>
-      
-                  </table>
-                <![endif]-->
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        
-      </div>
-    
-      
-      <!--[if mso | IE]>
-          </td>
-        </tr>
-      </table>
       <![endif]-->
     
     <!-- Footer-footer -->
@@ -1828,10 +1745,10 @@ table.table-list tr.conf_body td{border: none !important; color: #919191 !import
       <![endif]-->
     
       
-      <div  style="background:#fbfbfb;background-color:#fbfbfb;Margin:0px auto;max-width:600px;">
+      <div  style="background:white;background-color:white;Margin:0px auto;max-width:600px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fbfbfb;background-color:#fbfbfb;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:white;background-color:white;width:100%;"
         >
           <tbody>
             <tr>
